@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>QB Agency Invoice</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    background: #f4f6f8;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+.invoice {
+    max-width: 900px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    animation: fadeSlide 1s ease forwards;
+}
+
+@keyframes fadeSlide {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 20px;
+}
+
+.header h1 {
+    margin: 0;
+    color: #222;
+}
+
+.tag {
+    color: #666;
+    font-size: 14px;
+}
+
+.section {
+    margin-top: 30px;
+}
+
+.section h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.info p {
+    margin: 4px 0;
+    color: #444;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+table th {
+    background: #f0f0f0;
+}
+
+.amount {
+    text-align: right;
+}
+
+.total {
+    margin-top: 20px;
+    text-align: right;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.footer {
+    margin-top: 40px;
+    border-top: 1px dashed #ccc;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.authorized {
+    font-weight: 600;
+}
+
+.fade {
+    animation: fadeIn 1.5s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+</style>
+</head>
+
+<body>
+
+<div class="invoice fade">
+
+    <div class="header">
+        <div>
+            <h1>INVOICE</h1>
+            <div class="tag">QB Agency</div>
+            <div class="tag">Telegram: @quicklygrow</div>
+        </div>
+        <div class="info">
+            <p><strong>Invoice No:</strong> QB-001</p>
+            <p><strong>Date:</strong> 27/12/2025</p>
+            <p><strong>Billing:</strong> Monthly</p>
+        </div>
+    </div>
+
+    <div class="section info">
+        <h3>Billed To</h3>
+        <p><strong>Telegram Username:</strong> @JETPRIMEX</p>
+    </div>
+
+    <div class="section">
+        <h3>Service Description</h3>
+        <table>
+            <tr>
+                <th>Service</th>
+                <th>Details</th>
+                <th class="amount">Amount</th>
+            </tr>
+            <tr>
+                <td>Ads Management Service</td>
+                <td>Monthly Ads Service – Single Channel Only</td>
+                <td class="amount">₹6,000</td>
+            </tr>
+            <tr>
+                <td>Landing Page</td>
+                <td>GitHub Landing Page – Free of Cost</td>
+                <td class="amount">₹0</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="total">
+        Total Payable: ₹6,000
+        <div style="font-size:14px; color:#555;">(Rupees Six Thousand Only)</div>
+    </div>
+
+    <div class="section info">
+        <h3>Payment Details</h3>
+        <p><strong>Method:</strong> UPI</p>
+        <p><strong>UPI ID:</strong> yahooo999@apl</p>
+        <p><strong>Account Holder:</strong> Aditya</p>
+    </div>
+
+    <div class="section info">
+        <h3>Terms & Notes</h3>
+        <p>• Charges applicable for one Telegram channel only.</p>
+        <p>• Landing page provided free via GitHub.</p>
+        <p>• Service validity: 1 month from payment date.</p>
+        <p>• Invoice valid without signature.</p>
+    </div>
+
+    <div class="footer">
+        <div class="authorized">
+            Authorized By<br>
+            QB Agency<br>
+            @quicklygrow
+        </div>
+        <div style="color:#999;">
+            Thank you for your business
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
